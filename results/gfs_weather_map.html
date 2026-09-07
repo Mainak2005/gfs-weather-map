@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_01ff00108b118ce73732cd55256d0096 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_01ff00108b118ce73732cd55256d0096" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_01ff00108b118ce73732cd55256d0096 = L.map(
+                "map_01ff00108b118ce73732cd55256d0096",
+                {
+                    center: [22.501572, 88.3209435],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 9,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c6a118ddeed02b0b0ac016adde754325 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_c6a118ddeed02b0b0ac016adde754325.addTo(map_01ff00108b118ce73732cd55256d0096);
+        
+    
+            var marker_38c8b30042372ce1c8e12eaf38066df9 = L.marker(
+                [22.501572, 88.3209435],
+                {
+}
+            ).addTo(map_01ff00108b118ce73732cd55256d0096);
+        
+    
+            var icon_eeb8c96ce66dd35344b688a13ae677e3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_540edbc7b08d40b3e3f16a26e6349d5c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_62b43055668abc8a345762fe62f2adeb = $(`<div id="html_62b43055668abc8a345762fe62f2adeb" style="width: 100.0%; height: 100.0%;">     <div style="font-size:14px">          <h4>Behala</h4>          <b>GFS Forecast</b><br><br>          Forecast Hour: F000<br>         Temperature: 34.0 °C<br>         Humidity: 54.4%<br>         Wind Speed: 2.6 m/s<br>         Wind Direction: 231.4°      </div>     </div>`)[0];
+                popup_540edbc7b08d40b3e3f16a26e6349d5c.setContent(html_62b43055668abc8a345762fe62f2adeb);
+            
+        
+
+        marker_38c8b30042372ce1c8e12eaf38066df9.bindPopup(popup_540edbc7b08d40b3e3f16a26e6349d5c)
+        ;
+
+        
+    
+    
+            marker_38c8b30042372ce1c8e12eaf38066df9.bindTooltip(
+                `<div>
+                     GFS Weather — Behala
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_38c8b30042372ce1c8e12eaf38066df9.setIcon(icon_eeb8c96ce66dd35344b688a13ae677e3);
+            
+    
+            var circle_3aa0cec51352c7c4cce7606a74500824 = L.circle(
+                [22.501572, 88.3209435],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.08, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15000, "stroke": true, "weight": 3}
+            ).addTo(map_01ff00108b118ce73732cd55256d0096);
+        
+    
+            var marker_935c31b66f73e8ef5ba9957047fa77d3 = L.marker(
+                [22.501572, 88.3209435],
+                {
+}
+            ).addTo(map_01ff00108b118ce73732cd55256d0096);
+        
+    
+        var popup_b5ef3401807ed99ba2cd318ceeda28d1 = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_739fa8bd4bfcc99f728ad58b273d4d81 = $(`<div id="html_739fa8bd4bfcc99f728ad58b273d4d81" style="width: 100.0%; height: 100.0%;">     <div style="font-size:13px">      <h4>Multi-Forecast — Behala</h4>      <table border="1"            style="border-collapse:collapse;                   width:100%;                   text-align:center">          <tr>             <th>Hour</th>             <th>Temp</th>             <th>Humidity</th>             <th>Wind</th>         </tr>                   <tr>             <td>F000</td>             <td>34.0 °C</td>             <td>54.4%</td>             <td>2.6</td>         </tr>                  <tr>             <td>F006</td>             <td>31.1 °C</td>             <td>67.5%</td>             <td>3.8</td>         </tr>                  <tr>             <td>F012</td>             <td>28.6 °C</td>             <td>77.8%</td>             <td>3.0</td>         </tr>                  <tr>             <td>F024</td>             <td>34.3 °C</td>             <td>54.5%</td>             <td>2.5</td>         </tr>                  <tr>             <td>F048</td>             <td>33.8 °C</td>             <td>58.3%</td>             <td>2.4</td>         </tr>                  <tr>             <td>F072</td>             <td>34.2 °C</td>             <td>57.8%</td>             <td>5.0</td>         </tr>                  <tr>             <td>F120</td>             <td>32.0 °C</td>             <td>61.1%</td>             <td>4.1</td>         </tr>               </table>      </div>     </div>`)[0];
+                popup_b5ef3401807ed99ba2cd318ceeda28d1.setContent(html_739fa8bd4bfcc99f728ad58b273d4d81);
+            
+        
+
+        marker_935c31b66f73e8ef5ba9957047fa77d3.bindPopup(popup_b5ef3401807ed99ba2cd318ceeda28d1)
+        ;
+
+        
+    
+    
+            marker_935c31b66f73e8ef5ba9957047fa77d3.bindTooltip(
+                `<div>
+                     View Multi-Forecast
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>

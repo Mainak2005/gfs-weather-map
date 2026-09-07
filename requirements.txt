@@ -1,0 +1,9 @@
+requests
+xarray
+cfgrib
+eccodes
+numpy
+pandas
+geopy
+folium
+matplotlib
