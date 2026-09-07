@@ -41,10 +41,13 @@ Weather Response
 
 ---
 Install Dependencies
+
 pip install -r requirements.txt
 
 💻 Usage
+
 To run the project and generate the weather map and forecast, simply execute the main script:
+
 python main.py
 
 
